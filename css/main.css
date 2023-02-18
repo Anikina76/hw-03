@@ -60,8 +60,6 @@
 	letter-spacing: 0.03em;
 	color: var(--primary-text-color);
 	text-transform: uppercase;
-
-
 }
 
 .footer-link {
@@ -72,45 +70,22 @@
 	color: var(--logo-color);
 }
 
-.header-link {
+.header-link, .header-list-address {
 	display: block;
 	padding-top: 24px;
 	padding-bottom: 24px;
+	justify-content: flex-start;
+	min-width: auto;
+	justify-content: flex-start;
+	min-width: auto;
 
-	font-weight: 400;
+	color: var(--link-text-color);
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--primary-text-color);
 	cursor: pointer;
 	font-style: normal;
-
-
-}
-
-.header-link .header-address,
-.header-link .header-telefon,
-.header-list address {
-	color: var(--link-text-color);
-	font-weight: 400;
-	cursor: pointer;
-}
-
-.item {
-	justify-content: flex-start;
-	min-width: auto;
-}
-
-
-.header-list {
-	display: flex;
-	margin-left: 76px;
-
-}
-
-.header-list-address {
-	display: flex;
-	margin-left: auto;
 }
 
 .header-link:focus,
@@ -253,7 +228,7 @@
 	margin-bottom: 0;
 }
 
-.gallery-text-a {
+.gallery-headline {
 	font-weight: 500;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
@@ -263,7 +238,7 @@
 	margin-top: 32px;
 }
 
-.gallery-text-b {
+.gallery-subtitle {
 	font-size: 16px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
@@ -305,7 +280,7 @@
 
 }
 
-.benefits-header {
+.benefits-title {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
@@ -341,7 +316,7 @@
 }
 
 
-.gallery-header {
+.gallery-title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.11;
@@ -354,7 +329,7 @@
 	padding-bottom: 72px;
 }
 
-.art {
+.picture {
 	display: flex;
 	padding: 0%;
 	margin: 0%;
@@ -383,7 +358,7 @@
 }
 
 
-.teamcard-header-a {
+.teamcard-title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.11;
@@ -392,7 +367,7 @@
 }
 
 
-.teamcard-header {
+.teamcard-title {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
@@ -401,7 +376,7 @@
 	background: var(--background-color);
 }
 
-.teamcard-text {
+.teamcard-subtitle {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
@@ -411,7 +386,6 @@
 	margin: 0%;
 	padding-bottom: 32px;
 	padding-top: 8px;
-
 }
 
 
