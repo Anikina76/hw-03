@@ -13,7 +13,7 @@
 	--teamcard-background-color: #F4F4FD;
 }
 
-.body {
+body {
 	font-family: "Roboto", sans-serif;
 	color: var(--primary-text-color);
 }
@@ -42,12 +42,45 @@
 	box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	margin: 0;
+}
+
+
 .container-main-nav {
-	width: 1440px;
+	width: 1158px;
 	margin-right: auto;
 	margin-left: auto;
+	padding-left: 0%;
+	padding-right: 0ch;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+}
+
+.item {
+    display: inline;
+    align-items: baseline;
+}
+
+
+.header-list .item + .item {
+	margin-left: 40px;
+}
+  
+.header-list-address .item + .item {
+	margin-left: 40px;
+}
+
+.header-list { 
+	margin-left: 76px;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .logo-link,
@@ -62,24 +95,14 @@
 	text-transform: uppercase;
 }
 
-.footer-link {
-	color: var(--text-footer);
-}
-
 .logo-web {
 	color: var(--logo-color);
 }
 
-.header-link, .header-list-address {
-	display: block;
-	padding-top: 24px;
-	padding-bottom: 24px;
-	justify-content: flex-start;
-	min-width: auto;
-	justify-content: flex-start;
-	min-width: auto;
-
+.header-link {
+	font-family: 'Roboto';
 	color: var(--link-text-color);
+	font-weight: 500px;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
@@ -102,12 +125,18 @@
 
 .section-hero {
 	background: var(--background-color-accent);
+}
+
+.container-hero {
+	width: 1158px;
+	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
-	width: 1440px;
-	margin-top: 0%;
-	margin-bottom: 0%;
-	text-align: center;
+	padding: 191px 289px;
+}
+
+.benefits-list .item + .item {
+	margin-left: 24px;
 }
 
 .section-title {
@@ -130,7 +159,6 @@
 	line-height: 1.5;
 	letter-spacing: 0.04em;
 	color: var(--title-text-color);
-
 	border-radius: 4px;
 	padding: 16px 32px;
 }
@@ -143,8 +171,8 @@
 /* -----------------hero image - portfolio------------ */
 
 .container-btn,
-.container-gallery {
-	width: 1440px;
+.gallery-portfolio {
+	width: 1158px;
 	padding: 0%;
 	margin: 0%;
 	margin-top: 0%;
@@ -155,12 +183,9 @@
 }
 
 .container-btn {
-
 	display: flex;
 	justify-content: center;
 	padding-bottom: 72px;
-
-
 }
 
 
@@ -202,7 +227,7 @@
 
 
 .gallery-portfolio {
-	width: 1128px;
+	width: 1158px;
 	margin-left: auto;
 	margin-right: auto
 }
@@ -224,9 +249,9 @@
 	margin-right: 0;
 }
 
-.gallery-element:nth-last-child(-n+3) {
+/* .gallery-element:nth-last-child(-n+3) {
 	margin-bottom: 0;
-}
+} */
 
 .gallery-headline {
 	font-weight: 500;
@@ -245,28 +270,18 @@
 	color: var(--link-text-color);
 	margin-top: 8px;
 	margin-bottom: 32px;
-	padding: 0%;
-	margin: 0%;
+
 }
 
 /* ---------Section 1 Strategy, заголовок спрятать------ */
 
 .container-benefits {
-	width: 1128px;
-	padding: 0%;
-	margin: 0%;
+	width: 1158px;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 0%;
-	margin-bottom: 0%;
-}
 
-.item {
-	display: block;
-	Width: 264px;
-	justify-content: flex-start;
-
-
+	margin-bottom:117px;
+  margin-top: 117px;
 }
 
 
@@ -305,58 +320,81 @@
 /* ---Section 2/What are we doing---- */
 
 .container-gallery {
-	width: 1128px;
-	padding: 0%;
-	margin: 0%;
+	width: 1158px;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 0%;
 	margin-bottom: 0%;
 	text-align: center;
-}
-
-
-.gallery-title {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.11;
-	letter-spacing: 0.02em;
-	color: var(--primary-text-color);
-
-	padding: 0%;
-	margin: 0%;
-	padding-top: 120px;
-	padding-bottom: 72px;
 }
 
 .picture {
 	display: flex;
+	flex-wrap: wrap;
 	padding: 0%;
 	margin: 0%;
-	justify-content: space-between;
 }
+
+.image {
+	width: calc((100% - 48px) / 3);
+	margin-right: 24px;
+	margin-bottom: 48px;
+}
+
+.image:nth-child(3n) {
+	margin-right: 0;
+}
+
+.image:nth-last-child(-n+3) {
+	margin-bottom: 0;
+}
+
+.gallery-title {
+	padding-bottom: 70px;
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color);
+}
+
 
 /*------ fifth section with photos of specialists ----*/
 
 .container-teamcard {
-	background: var(--teamcard-background-color);
-	width: 1128px;
-	padding: 0%;
-	margin: 0%;
+	width: 1158px;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 0%;
 	margin-bottom: 0%;
 	text-align: center;
+	background: var(--teamcard-background-color); 
 }
 
 .foto {
 	display: flex;
+	flex-wrap: wrap;
 	padding: 0%;
 	margin: 0%;
-	justify-content: space-between;
+
+}
+.foto-list {
+	margin-right: 24px;
 }
 
+.foto-list {
+	width: calc((100% - 72px) / 4);
+	margin-right: 24px;
+}
+
+.teamcard-foto {
+	margin-bottom: 32px;
+}
+
+.foto-list:nth-child(4n) {
+  margin-right: 0;
+}
 
 .teamcard-title {
 	font-weight: 700;
@@ -368,24 +406,40 @@
 
 
 .teamcard-title {
-	font-weight: 500;
-	font-size: 20px;
+	margin-top: 120px;
+	margin-bottom: 72px;
+
+	font-weight: 700;
+	font-size: 36px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 	color: var(--primary-text-color);
 	background: var(--background-color);
 }
 
+.teamcard-subject {
+	margin-bottom: 8px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color);
+	background: var(--background-color);
+
+}
+
 .teamcard-subtitle {
+	padding: 0%;
+	margin: 0%;
+	padding-bottom: 32px;
+	padding-top: 8px;
+
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--link-text-color);
 	background: var(--background-color);
-	padding: 0%;
-	margin: 0%;
-	padding-bottom: 32px;
-	padding-top: 8px;
+	
 }
 
 
@@ -394,28 +448,31 @@
 
 .footer {
 	background: var(--background-color-accent);
+}
 
+.container-footer {
+
+	width: 1158px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .footer-link {
-	display: flex;
-	justify-content: flex-start;
+	margin-bottom: 16px;
+	color: var(--text-footer);
+	
 }
 
 .footer-text {
+
+	margin-top: 16px;
 	width: 264px;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--text-footer);
-}
-
-.container-footer {
-
-	margin-right: auto;
-	margin-left: auto;
-
-	margin-top: 0%;
-	margin-bottom: 0%;
-	text-align: center;
 }
