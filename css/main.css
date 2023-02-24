@@ -84,16 +84,14 @@ img {
 .logo-flex,
 .flex-item,
 .flex-address,
-.container-header { 
+.logo-flex { 
 	display: flex;
-	align-items: baseline;
 	margin: 0;
 	padding: 0;
 }
 
 .main-nav {
 	display: flex;
-	align-items: center;
 	padding-top: 24px;
 	padding-bottom: 24px;
 }
@@ -103,12 +101,26 @@ img {
 	margin-right: 0;
 }
 
+.header-container {
+	display: flex;
+	align-items: center;
+}
+.header-list {
+	display: flex;
+}
+
+.header-list-address {
+	display: flex;
+}
+
 .header-list .item + .item {
 	margin-left: 40px;
+
 }
   
 .header-list-address .item + .item {
 	margin-left: 40px;
+
 }
 
 .logo-link {
@@ -463,6 +475,3 @@ img {
 }
 
 
-
-
-flex-shrink: 0;
