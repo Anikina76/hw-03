@@ -306,7 +306,7 @@ img {
 
 .teamcard {
 	background: var(--teamcard-background-color);
-	padding-top: 120px;
+	padding-bottom: 120px;
 }
 
 .block-teamcard {
