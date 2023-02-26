@@ -90,8 +90,8 @@ img {
 
 .main-nav {
 	display: flex;
-	margin-top: 24px;
-	margin-bottom: 24px;
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 
 .header-address {
@@ -236,8 +236,8 @@ img {
 /* ---------Section 1 Strategy, заголовок спрятать------ */
 
 .benefits {
-	margin-top: 120px;
-	margin-bottom: 120px;
+	padding-top: 120px;
+	padding: 120px;
 }
 
 .benefits-list {
@@ -268,7 +268,7 @@ img {
 /* ---Section 2/What are we doing---- */
 
 .gallery {
-	margin-bottom: 120px;
+	padding-bottom: 120px;
 }
 
 .picture {
@@ -305,8 +305,8 @@ img {
 /*------ fifth section with photos of specialists ----*/
 
 .teamcard {
-	background: var(--teamcard-background-color);;
-	padding-bottom: 72px;
+	background: var(--teamcard-background-color);
+	padding-top: 120px;
 }
 
 .block-teamcard {
@@ -315,8 +315,7 @@ img {
 }
 
 .teamcard-title {
-	padding-top: 120px;
-	padding-bottom: 72px;
+	margin-bottom: 72px;
 	text-align: center;
 	font-weight: 700;
 	font-size: 36px;
@@ -391,9 +390,10 @@ img {
 .container-btn {
 	display: flex;
 	justify-content: center;
-	margin-top: 96px;
-	margin-bottom: 72px;
+	padding-top: 96px;
+	padding-bottom: 72px;
 	text-align: center;
+
 }
 
 .container-btn .button-portfolio + .button-portfolio {
@@ -403,11 +403,8 @@ img {
 .filter-button {
 	border: 1px solid var(--top-line);
 	border-radius: 4px;
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	align-items: flex-start;
-	min-width: 69px;
+	padding: 12px 24px;
+	text-align: center;
 
 	font-family: 'Roboto', sans-serif;
 	background: var(--teamcard-background-color);
@@ -418,12 +415,10 @@ img {
 	color: var(--filter-btn-color);
 }
 
-
 .filter-button:hover,
 .filter-button:focus {
 	color: var(--title-text-color);
 	background: var(--hover-focus-color);
-
 }
 
 
@@ -432,6 +427,7 @@ img {
 .gallery-list {
 	display: flex;
 	flex-wrap: wrap;
+	padding-bottom: 120px;
 }
 
 .gallery-element {
@@ -447,9 +443,7 @@ img {
 	margin-bottom: 48px;
 }
 
-.gallery-element:nth-child(n + 7) {
-  margin-bottom: 120px;
-}
+/*  */
 
 .gallery-headline {
 	font-weight: 500;
@@ -476,5 +470,3 @@ img {
 	padding: 32px 32px;
 
 }
-
-
